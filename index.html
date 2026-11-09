@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FolioNest Enterprise — Library Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail" id="rail"></aside>
+    <div class="col">
+      <header class="bar">
+        <button class="ib menu" data-a="menu" aria-label="Open menu">☰</button>
+        <div class="crumb" id="crumb"></div>
+        <label class="gsearch"><span>⌕</span><input id="gs" type="search" placeholder="Search the catalogue and press Enter" aria-label="Global search"></label>
+        <div class="bar-end">
+          <div class="np-wrap">
+            <button class="ib" data-a="notif" aria-label="Notifications">🔔<i class="dot" id="dot"></i></button>
+            <div class="np" id="np"></div>
+          </div>
+          <button class="ib" data-a="theme" aria-label="Toggle theme">◐</button>
+          <div class="me"><b>LD</b><span>Library desk<small>Administrator</small></span></div>
+        </div>
+      </header>
+      <main id="view"></main>
+    </div>
+  </div>
+  <dialog id="dg"></dialog>
+  <div class="scrim" id="scrim" data-a="closeDr"></div>
+  <aside class="drawer" id="dr" aria-live="polite"></aside>
+  <div id="toast" role="status"></div>
+</body>
+</html>
